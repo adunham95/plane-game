@@ -1,53 +1,57 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const navLinks = [
-    {name: "Dashboard", link: "#"}
+  { name: 'Dashboard', link: '#' },
 ];
 
 const companyLinks = [
-    {name: "Planes", link: "/links"}
-]
-
+  { name: 'Planes', link: '/links' },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function Header() {
-
-    const comapnyName = 'Company Name'
+  const comapnyName = 'Company Name';
 
   return (
     <div>
-      <Disclosure as="nav" className="bg-blue-900">
+      <Disclosure
+        as="nav"
+        className="bg-blue-900"
+      >
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between h-16">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
-                    <span className='text-white'>Airplane Game</span>
+                    <span className="text-white">Airplane Game</span>
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
-                      {navLinks.map((item, itemIdx) =>
-                          <a
-                            key={item.name}
-                            href={item.link}
-                            className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                          >
-                            {item.name}
-                          </a>
-                      )}
+                      {navLinks.map((item, itemIdx) => (
+                        <a
+                          key={item.name}
+                          href={item.link}
+                          className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        >
+                          {item.name}
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-4 flex items-center md:ml-6">
                     {/* Profile dropdown */}
-                    <Menu as="div" className="ml-3 relative">
+                    <Menu
+                      as="div"
+                      className="ml-3 relative"
+                    >
                       {({ open }) => (
                         <>
                           <div>
@@ -81,7 +85,7 @@ export default function Header() {
                                       href={c.link}
                                       className={classNames(
                                         active ? 'bg-gray-100' : '',
-                                        'block px-4 py-2 text-sm text-gray-700'
+                                        'block px-4 py-2 text-sm text-gray-700',
                                       )}
                                     >
                                       {c.name}
@@ -101,9 +105,15 @@ export default function Header() {
                   <Disclosure.Button className="bg-blue-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XIcon
+                        className="block h-6 w-6"
+                        aria-hidden="true"
+                      />
                     ) : (
-                      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                      <MenuIcon
+                        className="block h-6 w-6"
+                        aria-hidden="true"
+                      />
                     )}
                   </Disclosure.Button>
                 </div>
@@ -112,15 +122,15 @@ export default function Header() {
 
             <Disclosure.Panel className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                {navLinks.map((item, itemIdx) =>
+                {navLinks.map((item, itemIdx) => (
                   <a
-                  key={item.name}
-                  href={item.link}
-                  className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  {item.name}
-                </a> 
-                )}
+                    key={item.name}
+                    href={item.link}
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    {item.name}
+                  </a>
+                ))}
               </div>
               <div className="pt-4 pb-3 border-t border-gray-700">
                 <div className="flex items-center px-5">
@@ -153,5 +163,5 @@ export default function Header() {
         )}
       </Disclosure>
     </div>
-  )
+  );
 }

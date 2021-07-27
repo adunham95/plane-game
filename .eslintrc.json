@@ -1,11 +1,25 @@
-module.exports = {
-    env: {
-      browser: true,
-      es6: true,
-    },
-    extends: ["airbnb", "prettier", "plugin:react-hooks/recommended"],
-    plugins: ["react", "prettier", "react-hooks"],
-    rules: {
+{
+  "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true,
+      "jest": true
+  },
+  "extends": [
+      "plugin:react/recommended",
+      "airbnb"
+  ],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react"
+  ],
+  "rules": {
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx",".ts",".tsx"] }],
       "react/prop-types": 0,
       "no-unused-vars": 0,
@@ -22,8 +36,6 @@ module.exports = {
       "react/jsx-props-no-spreading":0,
       "global-require": 0,
       "no-underscore-dangle": 0,
-      "react/react-in-jsx-scope": 0,
-      "indent": ["error", 2],
-    },
-  };
-  
+      "react/react-in-jsx-scope": 0
+  }
+}
