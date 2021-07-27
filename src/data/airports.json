@@ -1,0 +1,68 @@
+{
+    "airports":[
+        {   "id":"TYS", 
+            "name":"Tyson/McGhee Airport", 
+            "city":"Knoxville", 
+            "class":3,
+            "unlockCost":0, 
+            "location":{"lat":"35.811111","long":"-83.993889"}
+        },
+        {
+            "id":"AVL", 
+            "name":"Asheville Reginal Airport", 
+            "city":"Asheville", 
+            "class":2,
+            "unlockCost":0,
+            "location":{"lat":"35.436111","long":"-82.541667"}
+        },
+        {
+            "id":"ATL", 
+            "name":"Hartsfield–Jackson Atlanta International Airport", 
+            "city":"Atlanta", 
+            "class":6,
+            "unlockCost":100000,
+            "location":{"lat":"33.636667","long":"-84.428056"}
+        },
+        {
+            "id":"JFK", 
+            "name":"John F. Kennedy International Airport", 
+            "city":"New York City", 
+            "class":6,
+            "unlockCost":100000,
+            "location":{"lat":"40.639722","long":"-73.778889"}
+            
+        },
+        {
+            "id":"LAX", 
+            "name":"Los Angeles International Airport", 
+            "city":"Los Angeles", 
+            "class":6,
+            "unlockCost":100000,
+            "location":{"lat":"33.9425","long":"-118.408056"}
+        },
+        {
+            "id":"CHS", 
+            "name":"Charleston International Airport", 
+            "city":"Charleston", 
+            "class":3,
+            "unlockCost":10000,
+            "location":{"lat":"32.898611","long":"-80.040556"}
+        },
+        {
+            "id":"GKT", 
+            "name":"Gatlinburg–Pigeon Forge Airport", 
+            "city":"Gatlinburg", 
+            "class":1,
+            "unlockCost":1000,
+            "location":{"lat":"35.857778","long":"35.857778"}
+        },
+        {
+            "id":"BNA", 
+            "name":"Nashville International Airport", 
+            "city":"Nashvillr", 
+            "class":6,
+            "unlockCost":900000,
+            "location":{"lat":"36.126667","long":"-86.681944"}
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+    {"name":"Mail", "size":1, "minCost":100, "maxCost":300},
+    {"name":"Medical Supplies", "size":1, "minCost":150, "maxCost":300},
+    {"name":"Food", "size":1, "minCost":100, "maxCost":300},
+    {"name":"Small Freight", "size":1, "minCost":100, "maxCost":400},
+    {"name":"Medium Freight", "size":2, "minCost":250, "maxCost":500},
+    {"name":"Large Freight", "size":4, "minCost":400, "maxCost":1000},
+    {"name":"Race Car", "size":5, "minCost":600, "maxCost":1500, "rarity": 50},
+    {"name":"Classified", "size":2, "minCost":200, "maxCost":800, "rarity": 100},
+    {"name":"Cars", "size":2, "minCost":200, "maxCost":800},
+    {"name":"Electronics", "size":1, "minCost":100, "maxCost":300}
+]

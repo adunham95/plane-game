@@ -7,7 +7,7 @@ const navLinks = [
 ];
 
 const companyLinks = [
-  { name: 'Planes', link: '/links' },
+  { name: 'Planes', link: '/plane' },
 ];
 
 function classNames(...classes) {

@@ -1,0 +1,197 @@
+{
+  "planeTypes": [
+      {"id":1,"name":"Class 1","people":{"people":1,"cargo":0},"cargo":{"people":0,"cargo":1}},
+      {"id":2,"name":"Class 2","people":{"people":3,"cargo":0},"cargo":{"people":0,"cargo":3},"hybrid":{"people":2,"cargo":1}},
+      {"id":3,"name":"Class 3","people":{"people":6,"cargo":0},"cargo":{"people":0,"cargo":6},"hybrid":{"people":3,"cargo":3}},
+      {"id":4,"name":"Class 4","people":{"people":8,"cargo":0},"cargo":{"people":0,"cargo":8},"hybrid":{"people":4,"cargo":4}},
+      {"id":5,"name":"Class 5","people":{"people":10,"cargo":0},"cargo":{"people":0,"cargo":10},"hybrid":{"people":5,"cargo":5}},
+      {"id":6,"name":"Class 6","cargo":{"people":0,"cargo":18},"hybrid":{"people":4,"cargo":14}}
+  ],
+  "brands": [
+      {"id": "ej", "name": "ExoJet"},
+      {"id": "ga", "name": "GlobalAero"},
+      {"id": "dn", "name": "Dorning"},
+      {"id": "av", "name": "AeroVolt"},
+      {"id": "lw", "name": "Linwood"},
+      {"id": "mc", "name": "Meicraft"},
+      {"id": "ab", "name": "AeroBus"}
+  ],
+  "engines": [
+      {"id":"tj","name":"Turbojet", "fuel":"Jet-A"},
+      {"id":"tf","name":"Turbofan", "fuel":"Jet-A"},
+      {"id":"tp","name":"Turboprop", "fuel":"Jet-B"},
+      {"id":"r","name":"Rocket", "fuel":"Rocket-A"},
+      {"id":"e","name":"Electric", "fuel":"Battery"}
+  ],
+  "models":[
+      {
+          "modelName": "C300",
+          "brandID":"lw",
+          "classID":3,
+          "speed":1,
+          "types":["people","cargo","hybrid"],
+          "engineType":"tj",
+          "engineCount":2
+      },
+      {
+          "modelName": "C400",
+          "brandID":"lw",
+          "classID":4,
+          "speed":1,
+          "types":["people","cargo","hybrid"],
+          "engineType":"tf",
+          "engineCount":2
+      },
+      {
+          "modelName": "C500",
+          "brandID":"lw",
+          "classID":5,
+          "speed":1,
+          "types":["people","cargo","hybrid"],
+          "engineType":"tf",
+          "engineCount":4
+      },
+      {
+          "modelName": "C200",
+          "brandID":"lw",
+          "classID":2,
+          "speed":1,
+          "types":["people","cargo"],
+          "engineType":"tj",
+          "engineCount":2
+      },
+      {
+          "modelName": "MicroJet",
+          "brandID":"dn",
+          "classID":2,
+          "speed":1,
+          "types":["people"],
+          "engineType":"tj",
+          "engineCount":2
+      },
+      {
+          "modelName": "Skyster",
+          "brandID":"dn",
+          "classID":3,
+          "speed":1,
+          "types":["people"],
+          "engineType":"tp",
+          "engineCount":2
+      },
+      {
+          "modelName": "Eagle",
+          "brandID":"ga",
+          "classID":6,
+          "speed":1,
+          "types":["cargo"],
+          "engineType":"tf",
+          "engineCount":6
+      },
+      {
+          "modelName": "E480",
+          "brandID":"ej",
+          "classID":3,
+          "speed":1,
+          "types":["people","cargo","hybrid"]
+      },
+      {
+          "modelName": "E490",
+          "brandID":"ej",
+          "classID":4,
+          "speed":1,
+          "types":["people","cargo","hybrid"],
+          "engineType":"tf",
+          "engineCount":2
+      },
+      {
+          "modelName": "E100",
+          "brandID":"ej",
+          "classID":2,
+          "speed":1,
+          "types":["people","cargo"],
+          "engineType":"tp",
+          "engineCount":2
+      },
+      {
+          "modelName": "E300",
+          "brandID":"ej",
+          "classID":3,
+          "speed":1,
+          "types":["people","cargo"],
+          "engineType":"tp",
+          "engineCount":2
+      },
+      {
+          "modelName": "G1000",
+          "brandID":"ga",
+          "classID":4,
+          "speed":1,
+          "types":["people","cargo","hybrid"],
+          "engineType":"tp",
+          "engineCount":4
+      },
+      {
+          "modelName": "G650",
+          "brandID":"ga",
+          "classID":3,
+          "speed":1,
+          "types":["people","cargo","hybrid"],
+          "engineType":"tp",
+          "engineCount":2
+      },
+      {
+          "modelName": "G2570",
+          "brandID":"ga",
+          "classID":5,
+          "speed":1,
+          "types":["people","cargo","hybrid"],
+          "engineType":"tf",
+          "engineCount":4
+      },
+      {
+          "modelName": "ChargeJet",
+          "brandID":"av",
+          "classID":1,
+          "speed":1,
+          "types":["people"],
+          "engineType":"e",
+          "engineCount":2
+      },
+      {
+          "modelName": "Electride",
+          "brandID":"av",
+          "classID":2,
+          "speed":1,
+          "types":["people"],
+          "engineType":"e",
+          "engineCount":4
+      },
+      {
+          "modelName": "Voyager",
+          "brandID":"lw",
+          "classID":3,
+          "speed":1,
+          "types":["people"],
+          "engineType":"tf",
+          "engineCount":2
+      },
+      {
+          "modelName": "Kangaroo",
+          "brandID":"ej",
+          "classID":6,
+          "speed":1,
+          "types":["people","cargo","hybrid"],
+          "engineType":"tf",
+          "engineCount":6
+      },
+      {
+          "modelName": "Pipit",
+          "brandID":"mc",
+          "classID":1,
+          "speed":0.5,
+          "types":["people"],
+          "engineType":"tp",
+          "engineCount":1
+      }
+  ]
+}

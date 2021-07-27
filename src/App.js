@@ -5,6 +5,8 @@ import {
   Link,
 } from 'react-router-dom';
 import Header from './components/header/header';
+import PlaneNew from './pages/PlaneNew';
+import PlaneOverview from './pages/PlaneOverview';
 
 function App() {
   return (
@@ -12,11 +14,14 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/plane">
-            {/* <About /> */}
+          <Route path="/plane/new">
+            <PlaneNew />
           </Route>
-          <Route path="/users">
-            {/* <Users /> */}
+          <Route
+            exact
+            path="/plane"
+          >
+            <PlaneOverview />
           </Route>
           <Route path="/">
             {/* <Home /> */}
